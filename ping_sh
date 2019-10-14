@@ -1,0 +1,5 @@
+#!/bin/bash
+for i in {1..255};do
+	ping -c2 -w2 10.3.145.$i &> /dev/null && echo "10.3.145.$i" &
+done
+wait
